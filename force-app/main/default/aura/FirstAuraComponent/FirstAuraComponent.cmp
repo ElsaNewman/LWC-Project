@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:card>
+    	<div>Merhaba Dunya</div>
+        <lightning:input name="input1" label="Bir isim giriniz"></lightning:input>
+    </lightning:card>
+</aura:component>

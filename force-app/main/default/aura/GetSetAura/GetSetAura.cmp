@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="attr1" type="String" default="Merhaba"/>
+    <aura:attribute name="attr2" type="String"/>
+    
+    <lightning:button label="Value getir" onclick="{!c.onclickHandler}"/>
+    <div>Attr2 degeri={!v.attr2}</div>
+    
+    <!--A-->
+    <aura:attribute name="inputValue" type="String"/>
+    <lightning:input name="intput1" type="String" label="Deger giriniz" onchange="{!c.inputValueHandler}"/>
+    <div>GirilenDeger:{!v.inputValue}</div>
+</aura:component>

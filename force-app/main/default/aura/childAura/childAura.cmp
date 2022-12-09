@@ -1,0 +1,6 @@
+<aura:component>
+    <p>Ben child Auradan geliyorum</p> <!-- 1 -->
+
+<aura:attribute name="child1" type="String" default="child elma"/>
+<div>child in degeri = {!v.child1}</div>
+</aura:component>

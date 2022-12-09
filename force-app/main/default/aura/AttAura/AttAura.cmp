@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="elma1" type="String" access="global" default="Herkese Merhaba" required="true"></aura:attribute>
+    <aura:attribute name="elma2" type="Integer" default="5"/>
+    <aura:attribute name="elma3" type="Boolean" default="false"/>
+    <aura:attribute name="elma4" type="Account"/>
+    <aura:attribute name="elma5" type="String[]"/>
+    <aura:attribute name="elma6" type="Object"/>
+    <aura:attribute name="elma7" type="AccountController"/> <!--Herhangi bir class'imizin ismini type'a yazarsak ondan bir intance uretmis oluruz -->
+    <!--AccountController elma7 = new AccountController(); gibi -->
+    
+    <lightning:card>
+        
+        Hello {!v.elma1} <br/>
+        <!--Failed to save AttAura.cmp: :AttAura:5,110: Invalid attribute "name": Source.Attribute'u card'in disina alalim -->
+        Sayi: {!v.elma2}
+        
+    </lightning:card>
+</aura:component>
